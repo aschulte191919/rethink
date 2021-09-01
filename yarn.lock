@@ -224,10 +224,10 @@
   "resolved" "https://registry.npmjs.org/@stitches/react/-/react-0.2.5.tgz"
   "version" "0.2.5"
 
-"@typeform/embed-react@^1.0.7":
-  "integrity" "sha512-dMxWITJ38KtJ/eInIlD/oC6gsAYEpczribjzR1cifob0PezPw5aDoD7HZpuJupqMPr5BcxpADA4SuDG6G/LgIA=="
-  "resolved" "https://registry.npmjs.org/@typeform/embed-react/-/embed-react-1.0.7.tgz"
-  "version" "1.0.7"
+"@typeform/embed-react@^1.1.0":
+  "integrity" "sha512-HmSOJ3aoURDICEn3i77GeC07BfnI219pGEACYkur1wVeXjIbCE4T7FAn0Jg+X+UTd1ZuZZTccLR0LA76LRAHAA=="
+  "resolved" "https://registry.npmjs.org/@typeform/embed-react/-/embed-react-1.1.0.tgz"
+  "version" "1.1.0"
   dependencies:
     "@typeform/embed" "^1.10.0"
 

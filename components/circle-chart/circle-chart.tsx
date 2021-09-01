@@ -65,7 +65,7 @@ const Circle = () => {
       barSize={10}
       data={data}
     >
-      <RadialBar minAngle={15} background clockWise dataKey='uv' />
+      <RadialBar background dataKey='uv' />
       <Legend
         iconSize={10}
         width={120}
