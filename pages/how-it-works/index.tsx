@@ -1,53 +1,53 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import TopNavigation from '../../components/top-nav'
+import Head from "next/head";
+import Image from "next/image";
+import TopNavigation from "../../components/top-nav";
 import {
   PageWrapper,
   ContentWrapper,
-  Wrapper
-} from '../../components/page-layout'
-import { styled } from '../../stitches.config'
+  Wrapper,
+} from "../../components/page-layout";
+import { styled } from "../../stitches.config";
 
-const Title = styled('h1', {
-  fontSize: '30px',
-  paddingTop: '10px'
-})
+const Title = styled("h1", {
+  fontSize: "30px",
+  paddingTop: "10px",
+});
 
-const Text = styled('div', {
-  fontSize: '20px',
-  flex: '1 1 0',
-  '@md': {
-    paddingRight: '$9',
-    paddingLeft: '$9'
-  }
-})
+const Text = styled("div", {
+  fontSize: "20px",
+  flex: "1 1 0",
+  "@md": {
+    paddingRight: "$9",
+    paddingLeft: "$9",
+  },
+});
 
-const Container = styled('div', {
-  display: 'flex',
-  padding: '5rem',
-  justifyContent: 'center',
-  alignItems: 'center',
-  flexDirection: 'column',
-  '@md': { flexDirection: 'row' },
-  '@sm': { marginRight: '$12', marginLeft: '$12' }
-})
+const Container = styled("div", {
+  display: "flex",
+  padding: "5rem",
+  justifyContent: "center",
+  alignItems: "center",
+  flexDirection: "column",
+  "@md": { flexDirection: "row" },
+  "@sm": { marginRight: "$12", marginLeft: "$12" },
+});
 
 const src = [
-  'https://images.unsplash.com/photo-1533090161767-e6ffed986c88?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8d29ya3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60',
-  'https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60',
-  'https://images.unsplash.com/photo-1574740637579-9ca0a610e491?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjZ8fGNvbGxhYm9yYXRpb258ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60'
-]
+  "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8d29ya3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
+  "https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60",
+  "https://images.unsplash.com/photo-1574740637579-9ca0a610e491?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjZ8fGNvbGxhYm9yYXRpb258ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
+];
 const Page = () => (
   <>
     <PageWrapper>
       <Head>
         <title>how it works</title>
-        <link rel='icon' href='/favicon.ico' />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <ContentWrapper>
         <TopNavigation />
         <main>
-          <Wrapper direction='column'>
+          <Wrapper direction="column">
             <Title>how it works</Title>
             <Container>
               <Text>
@@ -66,8 +66,8 @@ const Page = () => (
                 <Image
                   width={400}
                   height={300}
-                  objectFit='cover'
-                  alt='Headshot'
+                  objectFit="cover"
+                  alt="Headshot"
                   src={src[0]}
                 />
               </div>
@@ -77,8 +77,8 @@ const Page = () => (
                 <Image
                   width={400}
                   height={300}
-                  objectFit='cover'
-                  alt='Headshot'
+                  objectFit="cover"
+                  alt="Headshot"
                   src={src[1]}
                 />
               </div>
@@ -99,8 +99,8 @@ const Page = () => (
                 <Image
                   width={430}
                   height={300}
-                  objectFit='cover'
-                  alt='Headshot'
+                  objectFit="cover"
+                  alt="Headshot"
                   src={src[2]}
                 />
               </div>
@@ -110,6 +110,6 @@ const Page = () => (
       </ContentWrapper>
     </PageWrapper>
   </>
-)
+);
 
-export default Page
+export default Page;

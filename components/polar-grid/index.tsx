@@ -1,2 +1,2 @@
-import PolarGrid from './polar-grid'
-export default PolarGrid
+import PolarGrid from "./polar-grid";
+export default PolarGrid;

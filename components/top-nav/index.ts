@@ -1,2 +1,2 @@
-import TopNavigation from './top-nav'
+import TopNavigation from "./top-nav";
 export default TopNavigation;

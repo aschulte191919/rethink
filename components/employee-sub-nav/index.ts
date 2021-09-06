@@ -1,2 +1,2 @@
-import EmployeeSubNav from './employee-sub-nav'
-export default EmployeeSubNav
+import EmployeeSubNav from "./employee-sub-nav";
+export default EmployeeSubNav;

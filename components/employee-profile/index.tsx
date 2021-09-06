@@ -1,2 +1,2 @@
-import EmployeeProfile from './employee-profile'
-export default EmployeeProfile
+import EmployeeProfile from "./employee-profile";
+export default EmployeeProfile;

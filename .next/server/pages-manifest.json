@@ -1,7 +1,15 @@
 {
   "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
-  "/_error": "pages/_error.js",
+  "/api/hello": "pages/api/hello.js",
+  "/community": "pages/community.js",
+  "/employee-profile": "pages/employee-profile.js",
+  "/how-it-works": "pages/how-it-works.js",
   "/": "pages/index.js",
-  "/how-it-works": "pages/how-it-works.js"
+  "/profile": "pages/profile.js",
+  "/surveys/available": "pages/surveys/available.js",
+  "/surveys/past": "pages/surveys/past.js",
+  "/team": "pages/team.js",
+  "/wellness-report": "pages/wellness-report.js",
+  "/_error": "pages/_error.js"
 }

@@ -1,2 +1,2 @@
-import Emoji from './emoji'
-export default Emoji
+import Emoji from "./emoji";
+export default Emoji;

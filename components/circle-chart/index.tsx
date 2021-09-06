@@ -1,2 +1,2 @@
-import Circle from './circle-chart'
-export default Circle
+import Circle from "./circle-chart";
+export default Circle;

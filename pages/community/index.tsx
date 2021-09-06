@@ -1,18 +1,18 @@
-import Head from 'next/head'
-import TopNavigation from '../../components/top-nav'
+import Head from "next/head";
+import TopNavigation from "../../components/top-nav";
 import {
   PageWrapper,
   ContentWrapper,
-  Wrapper
-} from '../../components/page-layout'
-import Card from '../../components/card'
+  Wrapper,
+} from "../../components/page-layout";
+import Card from "../../components/card";
 
 const Page = () => (
   <>
     <PageWrapper>
       <Head>
         <title>community</title>
-        <link rel='icon' href='/favicon.ico' />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <ContentWrapper>
         <TopNavigation />
@@ -33,6 +33,6 @@ const Page = () => (
       </ContentWrapper>
     </PageWrapper>
   </>
-)
+);
 
-export default Page
+export default Page;

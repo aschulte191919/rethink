@@ -31,20 +31,15 @@ const EmployeeSubNav = () => {
   );
   return (
     <>
-      <Title>dashboard</Title>
+      <Title>surveys</Title>
       <Wrapper>
-        <Link href="/employee-dashboard/available" passHref>
+        <Link href="/surveys/available" passHref>
           <NavLink onClick={() => setSubNavState("available")}>
             available surveys
           </NavLink>
         </Link>
-        <Link href="/employee-dashboard/past" passHref>
+        <Link href="/surveys/past" passHref>
           <NavLink onClick={() => setSubNavState("past")}>past surveys</NavLink>
-        </Link>
-        <Link href="/employee-dashboard/wellness-report" passHref>
-          <NavLink onClick={() => setSubNavState("wellness-report")}>
-            my wellness
-          </NavLink>
         </Link>
       </Wrapper>
     </>

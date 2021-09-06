@@ -1,2 +1,2 @@
-import BubbleChart from './bubble-chart'
-export default BubbleChart
+import BubbleChart from "./bubble-chart";
+export default BubbleChart;
