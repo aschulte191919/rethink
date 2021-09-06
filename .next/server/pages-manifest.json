@@ -1,12 +1,7 @@
 {
   "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
-  "/api/hello": "pages/api/hello.js",
-  "/community": "pages/community.html",
-  "/employee-profile": "pages/employee-profile.html",
-  "/how-it-works": "pages/how-it-works.html",
-  "/": "pages/index.html",
-  "/team": "pages/team.html",
   "/_error": "pages/_error.js",
-  "/404": "pages/404.html"
+  "/": "pages/index.js",
+  "/how-it-works": "pages/how-it-works.js"
 }

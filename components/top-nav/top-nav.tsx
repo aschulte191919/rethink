@@ -1,5 +1,7 @@
 import Link from 'next/link'
+import { useLocalStorage } from '../../hooks/useLocalStorage'
 import { styled } from '../../stitches.config'
+
 
 const NavBar = styled('div', {
   display: 'flex',
@@ -53,6 +55,8 @@ const StyledAvatar = styled('div', {
 })
 
 const TopNavigation = () => {
+  const [subNav, setSubNavState] = useLocalStorage<string>('subNav', 'available');
+
   return (
     <NavBar>
       <NavBarGroup>
@@ -76,14 +80,14 @@ const TopNavigation = () => {
         <Link href='/how-it-works' passHref>
           <NavLink>about</NavLink>
         </Link>
-        <Link href='/community' passHref>
+        {/* <Link href='/community' passHref>
           <NavLink>community</NavLink>
-        </Link>
+        </Link> */}
         <Link href='/team' passHref>
           <NavLink>team</NavLink>
         </Link>
-        <Link href='/employee-view' passHref>
-          <NavLink>employee view</NavLink>
+        <Link href={`/employee-dashboard/${subNav}`} passHref>
+          <NavLink>employee dashboard (demo)</NavLink>
         </Link>
       </NavBarGroup>
 

@@ -35,6 +35,7 @@ const HomeWrapper = styled('div', {
 })
 
 const formButton = css({
+  border: 'none',
   backgroundColor: '$black500',
   fontSize: '$30',
   color: '$white500',
@@ -53,9 +54,6 @@ const Home = () => {
       <PopupButton id='epMlQXpM' className={formButton()}>
         Try one of our employee forms
       </PopupButton>
-      {/* <PopupButton id='zgRbGWVQ' className={formButton()}>
-          Try, one of our manager checkin forms
-        </PopupButton> */}
     </HomeWrapper>
   )
 }
