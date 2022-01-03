@@ -1,5 +1,8 @@
 import type { AppProps } from "next/app";
+import React, { useEffect, useState } from "react";
 import { stitchesGlobal } from "../stitches.config";
+import { useCheckUser } from "../utils/auth";
+const Login = React.lazy(() => import("./login"));
 
 /* --------------------------------------------------------
  * Global Styles
@@ -20,6 +23,7 @@ const globalStyles = stitchesGlobal({
 
 function MyApp({ Component, pageProps }: AppProps) {
   globalStyles();
-  return <Component {...pageProps} />;
+  const isLoggedIn = await magic.user.isLoggedIn();
+  return isLoggedIn ? <Component {...pageProps} /> : <Login />;
 }
 export default MyApp;

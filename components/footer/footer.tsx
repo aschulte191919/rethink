@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { styled } from "@stitches/react";
-import FooterImage from "../../assets/images/footer.png";
+// import FooterImage from "../../assets/images/footer.png";
 
 const Container = styled("div", {
   width: "100%",
@@ -14,7 +14,7 @@ const Container = styled("div", {
 const Footer = () => {
   return (
     <Container>
-      <Image objectFit="cover" alt="plants" src={FooterImage} />
+      {/* <Image objectFit="cover" alt="plants" src={FooterImage} /> */}
     </Container>
   );
 };
