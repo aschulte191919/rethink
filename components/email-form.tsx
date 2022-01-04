@@ -1,5 +1,5 @@
 import { SetStateAction, useState } from "react";
-import { Icon, MonochromeIcons, CallToAction } from "@magiclabs/ui";
+import { Icon, TextField, MonochromeIcons, CallToAction } from "@magiclabs/ui";
 
 const EmailForm = ({ onEmailSubmit, disabled }: any) => {
   const [email, setEmail] = useState("");
@@ -14,14 +14,19 @@ const EmailForm = ({ onEmailSubmit, disabled }: any) => {
       <form onSubmit={handleSubmit}>
         <h3 className="form-header">Login</h3>
         <div className="input-wrapper">
-          <input
+          <TextField
+            errorMessage=""
+            label="Email"
+            onFocus={function noRefCheck() {}}
+            onInvalid={function noRefCheck() {}}
             placeholder="Enter your email"
             type="email"
+            validateOnBlur
             value={email}
             onChange={(e: { target: { value: SetStateAction<string> } }) =>
               setEmail(e.target.value)
             }
-            // prefix={<Icon inline type={MonochromeIcons.Envelope} size={22} />}
+            prefix={<Icon inline type={MonochromeIcons.Envelope} size={22} />}
           />
         </div>
         <div>
