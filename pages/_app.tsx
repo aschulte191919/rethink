@@ -1,7 +1,12 @@
 import type { AppProps } from "next/app";
 import React, { useEffect, useState } from "react";
 import { stitchesGlobal } from "../stitches.config";
-import { useCheckUser } from "../utils/auth";
+import { UserContext } from "../lib/UserContext";
+import Router from "next/router";
+import { magic } from "../lib/magic";
+import { ThemeProvider } from "@magiclabs/ui";
+import "@magiclabs/ui/dist/cjs/index.css";
+
 const Login = React.lazy(() => import("./login"));
 
 /* --------------------------------------------------------
@@ -23,7 +28,34 @@ const globalStyles = stitchesGlobal({
 
 function MyApp({ Component, pageProps }: AppProps) {
   globalStyles();
-  const isLoggedIn = await magic.user.isLoggedIn();
-  return isLoggedIn ? <Component {...pageProps} /> : <Login />;
+  type UserContext = {
+    user?: object;
+    setUser: (c: string) => void;
+  };
+  const [user, setUser] = useState<UserContext>();
+  const [loading, setLoading] = useState(false);
+
+  // If isLoggedIn is true, set the UserContext with user data
+  // Otherwise, redirect to /login and set UserContext to { user: null }
+  useEffect(() => {
+    setLoading(true);
+    magic.user.isLoggedIn().then((isLoggedIn: boolean) => {
+      if (isLoggedIn) {
+        magic.user.getMetadata().then((userData: any) => setUser(userData));
+      } else {
+        Router.push("/login");
+        setUser(undefined);
+      }
+    });
+  }, []);
+
+  return (
+    <ThemeProvider>
+      <UserContext.Provider value={{ user, setUser, loading }}>
+        <Component {...pageProps} />
+      </UserContext.Provider>
+    </ThemeProvider>
+  );
 }
+
 export default MyApp;

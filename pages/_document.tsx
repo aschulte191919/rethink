@@ -1,5 +1,6 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import { getCssString } from "../stitches.config";
+import { DEFAULT_THEME, getThemeVariables } from "@magiclabs/ui";
 
 class MyDocument extends Document {
   render() {
@@ -14,6 +15,12 @@ class MyDocument extends Document {
           <style
             id="stitches"
             dangerouslySetInnerHTML={{ __html: getCssString() }}
+          />
+          <style
+            type="text/css"
+            dangerouslySetInnerHTML={{
+              __html: getThemeVariables(DEFAULT_THEME).toCSS(),
+            }}
           />
         </Head>
         <body>

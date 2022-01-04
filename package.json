@@ -10,6 +10,8 @@
     "format": "prettier --write \"{,!(node_modules|.build|build|dist|coverage)/**/}*.{js,ts,tsx,html,md,mdx,json}\""
   },
   "dependencies": {
+    "@magic-ext/oauth": "^1.0.0",
+    "@magiclabs/ui": "^0.24.0",
     "@stitches/react": "^0.2.1",
     "@typeform/embed-react": "^1.1.0",
     "magic-sdk": "^7.0.0",
