@@ -1,13 +1,11 @@
 import { styled } from "../../stitches.config";
 import { Widget } from "@typeform/embed-react";
-import * as ml5 from "ml5";
 
 const Wrapper = styled("div", {
   display: "flex",
 });
 
 const Surveys = () => {
-
   return (
     <>
       <Wrapper>
