@@ -1,14 +1,9 @@
 {
-  "../node_modules/next/dist/client/next-dev.js -> ./dev/noop": {
-    "id": "./node_modules/next/dist/client/dev/noop.js",
-    "files": [
-      "static/chunks/node_modules_next_dist_client_dev_noop_js.js"
-    ]
-  },
   "_app.tsx -> ./login": {
-    "id": "./pages/login/index.tsx",
+    "id": 7547,
     "files": [
-      "static/chunks/pages_login_index_tsx.js"
+      "static/chunks/69-e2bb37f6c6326b0c4493.js",
+      "static/chunks/594.9addfd0a0fc0466b580d.js"
     ]
   }
 }
